@@ -15,7 +15,8 @@ git clone https://github.com/mirroxin/rampage
 ## go there and copy the configuration
 ```
 cd rampage
-mv .config ~/ 
+mv .config ~/
+mv .bashrc ~/
 ```
 ## also don't forget to download this font
 ```

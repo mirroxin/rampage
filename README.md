@@ -3,6 +3,11 @@ my dotfiles but idk why did i do this
 ![ffff](examples/mywork.png)
 ![ffff](examples/mywork2.png)
 ![ffff](examples/mywork3.png)
+## Installing dependencies
+Before you begin, make sure you have the following programs installed (arch):
+```
+sudo pacman -S waybar hyprlock hyprpaper kitty/alacritty 
+```
 ## clone my repository
 ```
 git clone https://github.com/mirroxin/rampage 
@@ -10,5 +15,9 @@ git clone https://github.com/mirroxin/rampage
 ## go there and copy the configuration
 ```
 cd rampage
-mv .config /home/user0 
+mv .config ~/ 
+```
+## also don't forget to download this font
+```
+yay -S ttf-mononoki 
 ```

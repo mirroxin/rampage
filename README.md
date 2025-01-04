@@ -6,7 +6,8 @@ my dotfiles but idk why did i do this
 ## Installing dependencies
 Before you begin, make sure you have the following programs installed (arch):
 ```
-sudo pacman -S waybar hyprlock hyprpaper kitty rofi fastfetch 
+sudo pacman -S waybar hyprlock hyprpaper kitty rofi fastfetch
+yay -S tty-clock
 ```
 ## clone my repository
 ```

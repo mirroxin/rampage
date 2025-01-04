@@ -1,2 +1,5 @@
 my dotfiles but idk why did i do this
-ssss
+## Dependencies for Archlinux
+```
+sudo pacman -S waybar
+```

@@ -6,7 +6,7 @@ my dotfiles but idk why did i do this
 ## Installing dependencies
 Before you begin, make sure you have the following programs installed (arch):
 ```
-sudo pacman -S waybar hyprlock hyprpaper kitty/alacritty 
+sudo pacman -S waybar hyprlock hyprpaper kitty rofi fastfetch 
 ```
 ## clone my repository
 ```
@@ -22,3 +22,4 @@ mv .bashrc ~/
 ```
 yay -S ttf-mononoki 
 ```
+enjoy! :smile:

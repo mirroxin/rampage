@@ -23,7 +23,7 @@ configuration {
 
 window {
   fullscreen: true;
-  padding: 35% 30%;       // you might want to ajust these to resize rofi.
+  padding: 35% 30%;       
   transparency: "real";
   background-color: @bgt;
   border-color: @t;
@@ -47,10 +47,6 @@ entry {
     placeholder: "";
 }
 
-// less interesting stuff {{{
-
-// using elements from:
-// https://github.com/bardisty/gruvbox-rofi/blob/master/gruvbox-common.rasi
 
 textbox {
     text-color: @fg;

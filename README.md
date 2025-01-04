@@ -23,5 +23,5 @@ mv .bashrc ~/
 yay -S ttf-mononoki 
 ```
 ## Авторы
-- [mirroxin](https://github.com/mirroxin) — Создатель проекта
+- [mirroxin](https://github.com/mirroxin) — Project Creator,
 enjoy! :smile:

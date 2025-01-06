@@ -3,11 +3,12 @@ my dotfiles but idk why did i do this
 ![ffff](examples/mywork.png)
 ![ffff](examples/IMG_20250105_081649_821.jpg)
 ![ffff](examples/IMG_20250105_081314_974.jpg)
+![ffff](examples/2025-01-06-101947_hyprshot.png)
 ## Installing dependencies
 Before you begin, make sure you have the following programs installed (arch):
 ```
 sudo pacman -S waybar hyprlock hyprpaper kitty rofi fastfetch
-yay -S tty-clock python-pywal16
+yay -S tty-clock python-pywal16 swww
 ```
 ## clone my repository
 ```

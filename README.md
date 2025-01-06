@@ -1,9 +1,28 @@
-# meowww
+# Rampage
 my dotfiles but idk why did i do this
 ![ffff](examples/mywork.png)
-![ffff](examples/mywork2.png)
-![ffff](examples/mywork3.png)
-## Dependencies for Archlinux
+![ffff](examples/IMG_20250105_081649_821.jpg)
+![ffff](examples/IMG_20250105_081314_974.jpg)
+## Installing dependencies
+Before you begin, make sure you have the following programs installed (arch):
 ```
-sudo pacman -S waybar
+sudo pacman -S waybar hyprlock hyprpaper kitty rofi fastfetch
+yay -S tty-clock python-pywal16
 ```
+## clone my repository
+```
+git clone https://github.com/mirroxin/rampage 
+```
+## go there and copy the configuration
+```
+cd rampage
+mv .config ~/
+mv .bashrc ~/
+```
+## also don't forget to download this font
+```
+yay -S ttf-mononoki 
+```
+## Авторы
+- [mirroxin](https://github.com/mirroxin) — Project Creator,
+enjoy! :smile:

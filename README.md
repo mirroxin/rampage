@@ -22,7 +22,7 @@ mv .bashrc ~/
 ```
 ## also don't forget to download this font
 ```
-yay -S ttf-mononoki 
+yay -S ttf-monocraft 
 ```
 ## Авторы
 - [mirroxin](https://github.com/mirroxin) — Project Creator,

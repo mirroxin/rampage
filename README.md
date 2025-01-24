@@ -3,7 +3,7 @@ my dotfiles but idk why did i do this
 ![ffff](examples/on.png)
 ![ffff](examples/h.png)
 ![ffff](examples/hhh.png)
-![ffff](examples/mywork.png)
+![ffff](examples/fox.png)
 ## Installing dependencies
 Before you begin, make sure you have the following programs installed (arch):
 ```

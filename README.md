@@ -1,9 +1,9 @@
 # Rampage
 my dotfiles but idk why did i do this
 ![ffff](examples/hhh.png)
-![ffff](examples/mywork.png)
 ![ffff](examples/h.png)
 ![ffff](examples/IMG_20250122_093405_450.jpg)
+![ffff](examples/mywork.png)
 ## Installing dependencies
 Before you begin, make sure you have the following programs installed (arch):
 ```

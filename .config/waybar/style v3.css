@@ -1,0 +1,93 @@
+@import url("/home/mirroxin/.cache/wal/colors-waybar.css");
+
+* {
+    font-family:  Monocraft;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+window#waybar {
+    background:  rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid @color1;
+}
+
+#workspaces {
+}
+
+#workspaces button.focused {
+    color: @color1;
+}
+
+#workspaces button.active {
+    padding: 0 15px 0 15px;
+    color: @color10;
+}
+
+.modules-left {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.modules-right {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+# battery {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 15px;
+    color: #83a598;
+    background-color: #282828;
+}
+
+#clock {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 55px;
+    color: @color1;
+}
+
+#custom-text {
+    background: @background;
+    padding-right: 50px;
+    padding-left: 50px;
+    border: 2px solid;
+    color: @color3;
+}
+
+#cpu {
+    padding-right: 20px;
+    padding-left: 20px;
+    color: @color2;
+}
+
+#mpris {
+    color: @color2;
+    border-radius: 21px;
+    background: @background;
+    padding: 5px 5px;
+    margin: 1px 1px; 
+  }
+
+#window{
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: 15px;
+    border: 2px solid;
+    background: @background;
+    color: @color2;
+}
+
+#pulseaudio {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 15px;
+    color: @color3;
+}
+
+#memory {
+    padding-right: 20px;
+    padding-left: 20px;
+    color: @color4;
+}

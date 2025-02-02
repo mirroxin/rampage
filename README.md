@@ -3,6 +3,8 @@ my dotfiles but idk why did i do this
 ![ffff](examples/w.png)
 ![ffff](examples/ww.png)
 ![ffff](examples/www.png)
+![ffff](examples/wwww.png)
+![ffff](examples/wwwww.png)
 ## Installing dependencies
 Before you begin, make sure you have the following programs installed (arch):
 ```

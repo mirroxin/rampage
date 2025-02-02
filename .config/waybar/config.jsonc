@@ -1,14 +1,14 @@
 {
-    "layer": "top",
-    "position": "top",
+    "layer": "bottom",
+    "position": "bottom",
     "height": 40,
-    "margin-top": 1,
+    "margin-top": 0,
     "modules-left": ["hyprland/workspaces", "tray"],
     "modules-center": [],
     "modules-right": ["clock", "memory" , "pulseaudio", "cpu"],
                        
     "clock": {
-        "format": "{:%I:%M %p}",
+        "format": "{:%H:%M %p}",
         "format-alt": "{:%a, %d. %b  %I:%M %p}"
     },
     "pulseaudio": {

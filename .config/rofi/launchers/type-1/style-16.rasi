@@ -33,7 +33,7 @@ window {
     fullscreen:                  false;
     width:                       600px;
     x-offset:                    0px;
-    y-offset:                    0px;
+    y-offset:                    244px;
 
     /* properties for all widgets */
     enabled:                     true;

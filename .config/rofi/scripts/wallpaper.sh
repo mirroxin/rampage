@@ -25,7 +25,7 @@ else
     exit 1
 fi
 
-swww img $wallpaper --transition-type random --transition-fps 60 --transition-duration 0.5 --transition-bezier 0.65,0,0.35,1 --transition-step 1
+swww img $wallpaper --transition-type center
 sleep 1.25
 wal -i "$wallpaper" 
 pkill waybar 

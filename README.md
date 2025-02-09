@@ -16,7 +16,7 @@ d<p align="center">
 
 ---
 
-## 📸 Screenshots  
+## ₍^. .^₎⟆ Screenshots  
 <details>
   <summary>def</summary>
   <img src="examples/w.png" alt="Пример изображения">
@@ -36,7 +36,7 @@ d<p align="center">
 
 ---
 
-## 🛠 Installing dependencies
+## ₍^. .^₎⟆ Installing dependencies
 Before you begin, make sure you have the following programs installed (arch):
 ```bash
 sudo pacman -S waybar hyprlock kitty rofi fastfetch

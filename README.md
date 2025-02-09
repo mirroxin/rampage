@@ -1,5 +1,5 @@
-<p align="center">
-  <img src="my png :0/meows.gif" alt="Rampage" width="80%">
+d<p align="center">
+  <img src="my png :0/meows.mp4" alt="Rampage" width="80%">
 </p>
 
 <h1 align="center">🚀 Rampage</h1>

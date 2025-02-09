@@ -11,7 +11,7 @@
 <p align="center">
   <img src="https://img.shields.io/github/repo-size/mirroxin/rampage?style=for-the-badge">
   <img src="https://img.shields.io/github/last-commit/mirroxin/rampage?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/mirroxin/rampage?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Silly-True🤑-blue?style=for-the-badge">
 </p>
 
 ---

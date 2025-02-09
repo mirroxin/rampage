@@ -15,9 +15,9 @@
 </p>
 
 
-## ₍^. .^₎⟆ My Setup  
+## ₍^. .^₎⟆ Screenshots  
 <details>
-  <summary>def</summary>
+  <summary>My def setup</summary>
   <img src="examples/w.png" alt="Пример изображения">
   <img src="examples/ww.png" alt="Пример изображения">
   <img src="examples/www.png" alt="Пример изображения">

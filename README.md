@@ -1,7 +1,7 @@
 # Rampage
 my dotfiles but idk why did i do this
 <details>
-  <summary>Нажми, чтобы увидеть картинку</summary>
+  <summary>def</summary>
   <img src="examples/w.png" alt="Пример изображения">
   <img src="examples/ww.png" alt="Пример изображения">
   <img src="examples/www.png" alt="Пример изображения">

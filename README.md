@@ -14,7 +14,6 @@
   <img src="https://img.shields.io/badge/Silly-True🤑-blue?style=for-the-badge">
 </p>
 
----
 
 ## ₍^. .^₎⟆ Screenshots  
 <details>

@@ -26,13 +26,6 @@
   <img src="examples/wwwww.png" alt="Пример изображения">
 </details>
 
-<details>
-  <summary>pywal</summary>
-  <img src="examples/2.png" alt="Пример изображения">
-  <img src="examples/4.png" alt="Пример изображения">
-  <img src="examples/3.png" alt="Пример изображения">
-  <img src="examples/1.png" alt="Пример изображения">
-</details>
 
 <p align="center">
   <img src="examples/2.png" alt="Пример изображения">

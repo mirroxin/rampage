@@ -11,10 +11,10 @@ my dotfiles but idk why did i do this
 
 <details>
   <summary>def</summary>
-  <img src="examples/1.png" alt="Пример изображения">
   <img src="examples/2.png" alt="Пример изображения">
-  <img src="examples/3.png" alt="Пример изображения">
   <img src="examples/4.png" alt="Пример изображения">
+  <img src="examples/3.png" alt="Пример изображения">
+  <img src="examples/1.png" alt="Пример изображения">
 </details>
 
 ## Installing dependencies

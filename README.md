@@ -1,4 +1,4 @@
-d<p align="center">
+<p align="center">
   <img src="examples/okay.gif" alt="Rampage" width="60%">
 </p>
 

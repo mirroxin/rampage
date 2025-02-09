@@ -2,7 +2,7 @@ d<p align="center">
   <img src="examples/okay.gif" alt="Rampage" width="60%">
 </p>
 
-<h1 align="center">🚀 Rampage</h1>
+<h1 align="center">🐱 Rampage</h1>
 
 <p align="center">
   <b>my dotfiles but idk why did i do this</b>  

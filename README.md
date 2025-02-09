@@ -5,6 +5,12 @@ my dotfiles but idk why did i do this
 ![ffff](examples/www.png)
 ![ffff](examples/wwww.png)
 ![ffff](examples/wwwww.png)
+
+<details>
+  <summary>Нажми, чтобы увидеть картинку</summary>
+  <img src="examples/w.png" alt="Пример изображения">
+</details>
+
 ## Installing dependencies
 Before you begin, make sure you have the following programs installed (arch):
 ```

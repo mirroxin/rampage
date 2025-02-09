@@ -1,14 +1,12 @@
 # Rampage
 my dotfiles but idk why did i do this
-![ffff](examples/w.png)
-![ffff](examples/ww.png)
-![ffff](examples/www.png)
-![ffff](examples/wwww.png)
-![ffff](examples/wwwww.png)
-
 <details>
   <summary>Нажми, чтобы увидеть картинку</summary>
   <img src="examples/w.png" alt="Пример изображения">
+  <img src="examples/ww.png" alt="Пример изображения">
+  <img src="examples/www.png" alt="Пример изображения">
+  <img src="examples/wwww.png" alt="Пример изображения">
+  <img src="examples/wwwww.png" alt="Пример изображения">
 </details>
 
 ## Installing dependencies

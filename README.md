@@ -50,5 +50,6 @@ https://github.com/mirroxin/rampage
 ```bash
 mv ~/.config
 mv ~.bashrc
+```
 
 

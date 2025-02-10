@@ -46,3 +46,9 @@ yay -S swww pywal
 https://github.com/mirroxin/rampage
 ```
 
+## move my dots
+```bash
+mv ~/.config
+mv ~.bashrc
+
+

@@ -49,7 +49,10 @@ https://github.com/mirroxin/rampage
 ## Move my dots
 ```bash
 mv ~/.config
-mv ~.bashrc
+mv ~/.bashrc
+mv ~/wallpaper
+mv ~/Downloads
+
 ```
 
 ## Download font

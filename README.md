@@ -41,4 +41,8 @@ sudo pacman -S waybar hyprlock kitty rofi fastfetch
 yay -S swww pywal
 ```
 
-## I'm too lazy to write anything further, do it yourself
+## Clone my repository 
+```bash
+https://github.com/mirroxin/rampage
+```
+

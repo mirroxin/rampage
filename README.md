@@ -39,3 +39,6 @@ Before you begin, make sure you have the following programs installed (arch):
 ```bash
 sudo pacman -S waybar hyprlock kitty rofi fastfetch
 yay -S swww pywal
+```
+
+## I'm too lazy to write anything further, do it yourself

@@ -38,4 +38,4 @@
 Before you begin, make sure you have the following programs installed (arch):
 ```bash
 sudo pacman -S waybar hyprlock kitty rofi fastfetch
-yay -S tty-clock swww fabric pywal
+yay -S swww pywal

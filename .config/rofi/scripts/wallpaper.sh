@@ -30,3 +30,4 @@ sleep 1.25
 wal -i "$wallpaper" 
 pkill waybar 
 waybar
+walogram

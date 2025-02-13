@@ -31,9 +31,9 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       600px;
+    width:                       1100px;
     x-offset:                    0px;
-    y-offset:                    244px;
+    y-offset:                    240px;
 
     /* properties for all widgets */
     enabled:                     true;

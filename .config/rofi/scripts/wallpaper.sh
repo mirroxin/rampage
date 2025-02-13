@@ -25,7 +25,7 @@ else
     exit 1
 fi
 
-swww img $wallpaper --transition-type center
+swww img $wallpaper --transition-type fade
 sleep 1.25
 wal -i "$wallpaper" 
 pkill waybar 

@@ -38,7 +38,7 @@
 Before you begin, make sure you have the following programs installed (arch):
 ```bash
 sudo pacman -S waybar hyprlock kitty rofi fastfetch
-yay -S swww pywal
+yay -S swww pywal swaync
 ```
 
 ## Clone my repository 
@@ -57,6 +57,6 @@ mv ~/Downloads
 
 ## Download font
 ```bash
-yay -S ttf-monocraft
+yay -S ttf-monocraft noto-fonts-cjk 
 ```
 

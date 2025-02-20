@@ -1,4 +1,4 @@
-fastfetch --kitty-direct /home/mirroxin/Downloads/um.png
+fastfetch --kitty-direct /home/mirroxin/Downloads/ponos.png
 random_emoji() {
   local emojis=("😀" "🔥" "💻" "🖥" "🔧" "🌐" "🖊")
   echo ${emojis[RANDOM % ${#emojis[@]}]}
@@ -7,3 +7,5 @@ random_emoji() {
 PS1='> '
 
 export PATH=/home/mirroxin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+
+export PATH=$PATH:/home/mirroxin/.spicetify

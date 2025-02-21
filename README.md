@@ -55,6 +55,6 @@ mv ~/Downloads
 
 ## Download font
 ```bash
-yay -S ttf-monocraft noto-fonts-cjk 
+yay -S ttf-monocraft noto-fonts-cjk otf-codenewroman-nerd
 ```
 

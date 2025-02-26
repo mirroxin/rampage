@@ -11,7 +11,9 @@
 }
 
 window#waybar {
-    background: transparent;
+    background: @background;
+    border-radius: 2px;
+
 }
 
 .modules-left {

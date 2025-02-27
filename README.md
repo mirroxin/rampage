@@ -18,9 +18,10 @@
  # **₍^. .^₎⟆ Screenshots**  
 <details>
   <summary>My def setup</summary>
-  <img src="examples/s.png" alt="Пример изображения">
-  <img src="examples/ss.png" alt="Пример изображения">
-  <img src="examples/sss.png" alt="Пример изображения">
+  <img src="examples/f.png" alt="Пример изображения">
+  <img src="examples/ff.png" alt="Пример изображения">
+  <img src="examples/fff.png" alt="Пример изображения">
+  <img src="examples/ffff.png" alt="Пример изображения">
 </details>
 
 

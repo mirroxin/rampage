@@ -16,19 +16,11 @@
 
 
  # **₍^. .^₎⟆ Screenshots**  
-<details>
-  <summary>My def setup</summary>
-  <img src="examples/f.png" alt="Пример изображения">
+<p align="center">
+<img src="examples/f.png" alt="Пример изображения">
   <img src="examples/ff.png" alt="Пример изображения">
   <img src="examples/fff.png" alt="Пример изображения">
   <img src="examples/ffff.png" alt="Пример изображения">
-</details>
-
-
-<p align="center">
-  <img src="examples/zz.png" alt="Пример изображения">
-  <img src="examples/zzz.png" alt="Пример изображения">
-  <img src="examples/z.png" alt="Пример изображения">
 </p>
 
 ---
@@ -37,7 +29,7 @@
 Before you begin, make sure you have the following programs installed (arch):
 ```bash
 sudo pacman -S waybar hyprlock kitty rofi fastfetch
-yay -S swww pywal swaync
+yay -S swww pywal swaync wofi
 ```
 
 ## Clone my repository 

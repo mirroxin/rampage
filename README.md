@@ -26,9 +26,9 @@
 
 
 <p align="center">
-  <img src="examples/oo.png" alt="Пример изображения">
-  <img src="examples/o.png" alt="Пример изображения">
-  <img src="examples/ooo.png" alt="Пример изображения">
+  <img src="examples/zz.png" alt="Пример изображения">
+  <img src="examples/zzz.png" alt="Пример изображения">
+  <img src="examples/z.png" alt="Пример изображения">
 </p>
 
 ---

@@ -1,13 +1,14 @@
 {
     "layer": "top",
     "spacing": 0,
+    "position":"top",
     "height": 0,
     "margin-top": 8,
     "margin-right": 80,
     "margin-bottom": 0,
     "margin-left": 80,
 
-    "modules-left": ["custom/archlogo", "custom/separator"],
+    "modules-left": ["custom/archlogo", "group/expand"],
     "modules-right": ["tray", "network", "clock"],
     "modules-center": ["hyprland/workspaces"],
 
@@ -29,6 +30,49 @@
         "sort-by-number": true
     },
     
+    "group/expand": {
+        "orientation": "horizontal",
+          "drawer": {
+            "transition-duration": 600,
+            "transition-to-left": true,
+            "click-to-reveal": true
+          },
+          "modules": ["custom/separator", "cpu","memory","pulseaudio"],
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon}",
+        "format-icons": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "on-scroll-down": "brightnessctl s 5%-",
+        "on-scroll-up": "brightnessctl s +5%",
+        "tooltip": true,
+        "tooltip-format": "Brightness: {percent}% ",
+        "smooth-scrolling-threshold": 1
+      },
+      "backlight/slider": {
+        "min": 5,
+        "max": 100,
+        "orientation": "vertical",
+        "device": "intel_backlight"
+    },
+
     "custom/separator": {
         "format": "│",
         "tooltip": false
@@ -40,6 +84,26 @@
     "on-click-right": "killall rofi",
     "tooltip": true,
     "tooltip-format": "meowww 十",
+    },
+
+    "cpu": {
+        "format": "  {usage}%",
+        "interval": 2
+    },    
+
+    "memory": {
+        "format": "  {percentage}%",
+        "interval": 2
+    },
+
+    "pulseaudio": {
+        "scroll-step": 5,
+        "max-volume": 150,
+        "format": "  {volume}%",
+        "format-bluetooth": "vol {volume}%",
+        "nospacing": 1,
+        "on-click": "pavucontrol",
+        "tooltip": false
     },
 
     "tray": {

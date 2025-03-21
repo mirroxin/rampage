@@ -4,7 +4,7 @@
     border: none;
     border-radius: 0;
     min-height: 0;
-    font-family: "Noto Sans CJK";
+    font-family: "Monocraft";
     font-weight: 500;
     font-size: 14px;
     padding: 0;
@@ -37,6 +37,8 @@ tooltip {
 }
 
 #clock,
+#custom-weather,
+#custom-media,
 #network {
     margin: 6px 6px 6px 0px;
     padding: 2px 8px;
@@ -44,6 +46,7 @@ tooltip {
 
 #cpu,
 #memory,
+#bluetooth,
 #pulseaudio {
     margin: 6px 6px 6px 0px;
     padding: 2px 8px;
@@ -53,6 +56,7 @@ tooltip {
 #workspaces {
     margin: 6px 0px 6px 6px;
     padding-right: 30px;
+    transition: all .3s;
     color: @color3;
 }
 
@@ -74,12 +78,21 @@ tooltip {
     min-width: 0;
     box-shadow: inset 0 -3px transparent;
     padding: 2px 9px;
-    color: @color1;
+    /* transition: all .6s; */
+    color: @color9;
 }
 
 #workspaces button.focused {
     color: #000000;
     background: #000000;
+}
+
+#workspaces button.active {
+    padding: 0px 2px;
+    border-radius:10px;
+    /* background: @color1; */
+    transition: all .6s;
+    min-width: 30px;
 }
 
 #workspaces button.urgent {
@@ -130,3 +143,31 @@ tooltip {
     color: #1d2021;
 }
 
+#bluetooth {
+    background: @color1;
+    opacity: 0.9;
+    border-radius: 5px;
+    color: #000000;
+}
+
+#custom-weather {
+    background: @color1;
+    opacity: 0.9;
+    border-radius: 5px;
+    color: #000000;
+}
+
+tooltip {
+    background: rgba(0, 0, 0, 0.5); 
+    opacity: 0.9;
+    border-radius: 5px;
+    color: #000000;
+}
+
+#custom-media {
+    background-color: @color2;
+    opacity: 0.9;
+    border-radius: 5px;
+    color: #1d2021;
+    transition: all .3s;
+}

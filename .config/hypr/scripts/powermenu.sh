@@ -11,7 +11,7 @@ shutdown=''
 reboot=''
 lock=''
 suspend='念'
-logout=''
+logout=')'
 yes=''
 no=''
 

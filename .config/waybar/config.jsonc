@@ -9,12 +9,12 @@
     "margin-left": 80,
 
     "modules-left": ["custom/archlogo", "group/expand"],
-    "modules-right": ["tray", "network", "clock"],
+    "modules-right": ["custom/media", "tray", "network", "custom/weather", "clock"],
     "modules-center": ["hyprland/workspaces"],
 
     "hyprland/workspaces": {
         "format": "{icon}",
-        "on-click": "activate",
+        // "on-click": "activate",
         "format-icons": {
             "1": "一",
             "2": "二",
@@ -30,15 +30,39 @@
         "sort-by-number": true
     },
     
+    "custom/media": {
+        "format": "{icon} {0}",
+            "return-type": "json",
+            "format-icons": {
+                "Playing": "",
+                "Paused": ""
+            },
+            "max-length": 50,
+            "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+            "on-click": "playerctl play-pause",
+            "on-scroll-up": "playerctl next",
+            "on-scroll-down": "playerctl previous",
+            "tooltip": false
+        },
+    
+
     "group/expand": {
         "orientation": "horizontal",
           "drawer": {
-            "transition-duration": 600,
+            "transition-duration": 1000,
             "transition-to-left": true,
             "click-to-reveal": true
           },
-          "modules": ["custom/separator", "cpu","memory","pulseaudio"],
+          "modules": ["custom/separator", "cpu","memory","pulseaudio", "bluetooth"],
     },
+
+   "custom/weather": {
+    "format": "{}°",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "wttrbar",
+    "return-type": "json"
+   },
 
     "backlight": {
         "device": "intel_backlight",
@@ -87,24 +111,34 @@
     },
 
     "cpu": {
-        "format": "  {usage}%",
+        "format": " {usage}%",
         "interval": 2
     },    
 
     "memory": {
-        "format": "  {percentage}%",
+        "format": " {percentage}%",
         "interval": 2
     },
 
     "pulseaudio": {
         "scroll-step": 5,
         "max-volume": 150,
-        "format": "  {volume}%",
+        "format": " {volume}%",
         "format-bluetooth": "vol {volume}%",
         "nospacing": 1,
         "on-click": "pavucontrol",
-        "tooltip": false
+        "tooltip": true
     },
+
+    "bluetooth": {
+        "format-on": "󰂯",
+        "format-off": "󰂲",
+        "format-disabled": "", // an empty format will hide the module
+        "format-connected": "󰂱 {num_connections}",
+        "tooltip-format-connected": "{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "blueman-manager"
+    },  
 
     "tray": {
         "spacing": 10,
@@ -112,7 +146,7 @@
     },
     
     "network": {
-        "format-wifi": " ",
+        "format-wifi": "",
         "format-ethernet":"",
         "format-disconnected": "",
         "tooltip-format-disconnected": "Error",

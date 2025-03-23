@@ -17,10 +17,9 @@
 
  # **₍^. .^₎⟆ Screenshots**  
 <p align="center">
-<img src="examples/f.png" alt="Пример изображения">
-  <img src="examples/ff.png" alt="Пример изображения">
-  <img src="examples/fff.png" alt="Пример изображения">
-  <img src="examples/ffff.png" alt="Пример изображения">
+<img src="examples/j.png" alt="Пример изображения">
+  <img src="examples/jjj.png" alt="Пример изображения">
+  <img src="examples/jj.png" alt="Пример изображения">
 </p>
 
 ---

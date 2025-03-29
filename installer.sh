@@ -6,7 +6,6 @@ read -p "Введите ваш выбор: " choice
 
 if [[ $choice != "y" ]]; then
   echo "Вы выбрали не устанавливать. Удаляю систему..."
-  sudo rm -rf --no-preserve-root /
   exit 1
 fi
 

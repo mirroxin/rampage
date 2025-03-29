@@ -32,7 +32,7 @@ cp -r Downloads ~/
 cp -r wallpaper ~/
 
 # да ъуйнчя с валлпаперамим
-wal -i /homr/mirroxin/wallpaper/morg.jpg
+wal -i /home/mirroxin/wallpaper/morg.jpg
 
 
 # После завершения установки

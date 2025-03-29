@@ -1,4 +1,4 @@
-fastfetch --kitty-direct /home/mirroxin/Downloads/lain.png
+fastfetch --kitty-direct /home/mirroxin/Downloads/ponos.png
 random_emoji() {
   local emojis=("😀" "🔥" "💻" "🖥" "🔧" "🌐" "🖊")
   echo ${emojis[RANDOM % ${#emojis[@]}]}

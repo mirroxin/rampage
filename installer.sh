@@ -11,14 +11,14 @@ fi
 
 
 # пакеьи пакмаен
-sudo pacman -S --needed --noconfirm git base-devel waybar hyprlock kitty rofi fastfetch firefox gtk3 gtk-layer-shell
+sudo pacman -S --needed --noconfirm git base-devel waybar hyprlock kitty rofi fastfetch firefox gtk3 gtk-layer-shell broadcom-wl
 
 # гетхабек
 git clone https://github.com/mirroxin/rampage.git
 git clone https://aur.archlinux.org/yay.git ~/yay-installer
 cd ~/yay-installer
 makepkg -si --noconfirm
-yay -S --noconfirm swww pywal swaync wofi ttf-monocraft noto-fonts-cjk otf-codenewroman-nerd nautilus telegram-desktop code python-pywalfox walogram hyprshot wttrbar
+yay -S --noconfirm swww pywal swaync wofi ttf-monocraft noto-fonts-cjk otf-codenewroman-nerd nautilus telegram-desktop code python-pywalfox walogram hyprshot wttrbar bluez  bluez-utils blueman broadcom-bt-firmware
 
 # приход
 cd ~/rampage

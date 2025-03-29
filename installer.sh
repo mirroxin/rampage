@@ -20,13 +20,9 @@ git clone https://aur.archlinux.org/yay.git ~/yay-installer
 cd ~/yay-installer
 makepkg -si --noconfirm
 yay -S --noconfirm swww pywal swaync wofi ttf-monocraft noto-fonts-cjk otf-codenewroman-nerd nautilus telegram-desktop code
-git clone https://github.com/lotos-linux/hypr-dock.git
-cd ~/hypr-dock
-make get
-make build
-make install
 
 # приход
+cd ~/
 cd ~/rampage
 
 # капирование

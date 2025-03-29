@@ -22,7 +22,6 @@ makepkg -si --noconfirm
 yay -S --noconfirm swww pywal swaync wofi ttf-monocraft noto-fonts-cjk otf-codenewroman-nerd nautilus telegram-desktop code
 
 # приход
-cd ~/
 cd ~/rampage
 
 # капирование

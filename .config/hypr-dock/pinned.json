@@ -4,11 +4,11 @@
     "firefox",
     "code-oss",
     "kitty",
-    "com.rafaelmardojai.Blanket",
-    "blueman-manager",
-    "VirtualBox",
-    "org.kde.dolphin",
     "com.obsproject.Studio",
-    "io.missioncenter.MissionCenter"
+    "discord",
+    "steam",
+    "org.gnome.Nautilus",
+    "org.gnome.Boxes",
+    "blueman-manager"
   ]
 }

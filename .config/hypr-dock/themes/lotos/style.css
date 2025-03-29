@@ -5,13 +5,13 @@ window {
 }
 
 #app {
-  background-color: rgba(42, 41, 49, 0.473);
+  background-color: @background;
   border-radius: 12px;
   padding: 5px;
 }
 
 button {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(143, 0, 0, 0);
   padding: 4px;
   border-radius: 12px;
   border: none;

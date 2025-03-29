@@ -8,7 +8,7 @@
     "margin-bottom": 0,
     "margin-left": 80,
 
-    "modules-left": ["custom/archlogo", "group/expand"],
+    "modules-left": ["custom/pacman", "cpu","memory","pulseaudio", "bluetooth"],
     "modules-right": ["custom/media", "tray", "network", "custom/weather", "clock"],
     "modules-center": ["hyprland/workspaces"],
 
@@ -16,16 +16,9 @@
         "format": "{icon}",
         // "on-click": "activate",
         "format-icons": {
-            "1": "一",
-            "2": "二",
-            "3": "三",
-            "4": "四",
-            "5": "こ",
-            "6": "六",
-            "7": "七",
-            "8": "八",
-            "9": "私",
-            "10": "十",
+            "active": "",
+            "default": "",
+            "empty": ""
         },
         "sort-by-number": true
     },
@@ -124,7 +117,9 @@
         "scroll-step": 5,
         "max-volume": 150,
         "format": " {volume}%",
-        "format-bluetooth": "vol {volume}%",
+        "format-muted": " {format_source}",
+        "format-bluetooth": "{icon} {volume}%",
+        "format-bluetooth-muted": "{icon} {volume}%",
         "nospacing": 1,
         "on-click": "pavucontrol",
         "tooltip": true
@@ -146,8 +141,8 @@
     },
     
     "network": {
-        "format-wifi": "",
-        "format-ethernet":"",
+        "format-wifi": " ",
+        "format-ethernet":" ",
         "format-disconnected": "",
         "tooltip-format-disconnected": "Error",
         "tooltip-format-wifi": "{essid} ({signalStrength}%)",
@@ -159,6 +154,15 @@
         "format": "{:%H:%M}",
         "tooltip": true,
         "tooltip-format": "{:%A, %d %B %Y}",
+    },
+    "custom/pacman": {
+        "format": "󰅢 {}",
+        "interval": 30,   
+        "exec": "checkupdates | wc -l",
+        "exec-if": "exit 0",
+        "on-click": "kitty sh -c 'sudo pacman -Syu; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar",
+        "signal": 8,
+        "tooltip": false,
     },
 
 }

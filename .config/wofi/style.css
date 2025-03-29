@@ -1,4 +1,4 @@
-@import url('/home/mirroxin/.cache/wal/colors-waybar.css');
+@import url("/home/mirroxin/.cache/wal/colors-waybar.css");
 
 @define-color mauve  @color9;
 @define-color red  @color9;
@@ -25,7 +25,7 @@ window {
     all:unset;
     padding: 20px;
     border-radius: 20px;
-    background-color: alpha(@background,.9);
+    background-color: alpha(@background,.3);
 }
 #inner-box {
     margin: 2px;
@@ -72,13 +72,13 @@ window {
 #text {
     margin: 5px;
     border: none;
-    color: @text;
+    color: #000000;
     outline: none;
 }
 #text {
     margin: 5px;
     border: none;
-    color: @text;
+    color: #000000;
     outline: none;
 }
 #entry {
@@ -92,13 +92,13 @@ window {
 
 }
 #entry:selected {
-    box-shadow: 1px 1px 5px rgba(255,255,255, .03);
+    /* box-shadow: 5px 5px 5px 5px 5px rgba(255,255,255, .03); */
     border: none;
     border-radius: 20px;
-    background-color:alpha(@color2,.1);
+    /* background-color:alpha(@color2,.1); */
 }
 #entry:selected #text {
-    color: @mauve;
+    color: #000000;
 }
 #entry:drop(active) {
     background-color: @lavender !important;

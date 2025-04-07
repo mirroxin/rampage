@@ -5,10 +5,13 @@
     "code-oss",
     "kitty",
     "com.obsproject.Studio",
-    "discord",
     "steam",
     "org.gnome.Nautilus",
-    "org.gnome.Boxes",
-    "blueman-manager"
+    "blueman-manager",
+    "org.pulseaudio.pavucontrol",
+    "org.qbittorrent.qBittorrent",
+    "ultrakill.exe",
+    "GitHub Desktop",
+    "discord"
   ]
 }

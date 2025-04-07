@@ -1,0 +1,168 @@
+{
+    "layer": "top",
+    "spacing": 0,
+    "position":"top",
+    "height": 0,
+    "margin-top": 8,
+    "margin-right": 80,
+    "margin-bottom": 0,
+    "margin-left": 80,
+
+    "modules-left": ["custom/pacman", "cpu","memory","pulseaudio", "bluetooth"],
+    "modules-right": ["custom/media", "tray", "network", "custom/weather", "clock"],
+    "modules-center": ["hyprland/workspaces"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        // "on-click": "activate",
+        "format-icons": {
+            "active": "",
+            "default": "",
+            "empty": ""
+        },
+        "sort-by-number": true
+    },
+    
+    "custom/media": {
+        "format": "{icon} {0}",
+            "return-type": "json",
+            "format-icons": {
+                "Playing": "",
+                "Paused": ""
+            },
+            "max-length": 50,
+            "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+            "on-click": "playerctl play-pause",
+            "on-scroll-up": "playerctl next",
+            "on-scroll-down": "playerctl previous",
+            "tooltip": false
+        },
+    
+
+    "group/expand": {
+        "orientation": "horizontal",
+          "drawer": {
+            "transition-duration": 1000,
+            "transition-to-left": true,
+            "click-to-reveal": true
+          },
+          "modules": ["custom/separator", "cpu","memory","pulseaudio", "bluetooth"],
+    },
+
+   "custom/weather": {
+    "format": "{}°",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "wttrbar",
+    "return-type": "json"
+   },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon}",
+        "format-icons": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "on-scroll-down": "brightnessctl s 5%-",
+        "on-scroll-up": "brightnessctl s +5%",
+        "tooltip": true,
+        "tooltip-format": "Brightness: {percent}% ",
+        "smooth-scrolling-threshold": 1
+      },
+      "backlight/slider": {
+        "min": 5,
+        "max": 100,
+        "orientation": "vertical",
+        "device": "intel_backlight"
+    },
+
+    "custom/separator": {
+        "format": "│",
+        "tooltip": false
+    },
+
+    "custom/archlogo": {
+    "format": " ",
+    "on-click": "exec swaync-client -t",
+    "on-click-right": "killall rofi",
+    "tooltip": true,
+    "tooltip-format": "meowww 十",
+    },
+
+    "cpu": {
+        "format": " {usage}%",
+        "interval": 2
+    },    
+
+    "memory": {
+        "format": " {percentage}%",
+        "interval": 2
+    },
+
+    "pulseaudio": {
+        "scroll-step": 5,
+        "max-volume": 150,
+        "format": " {volume}%",
+        "format-muted": " {format_source}",
+        "format-bluetooth": "{icon} {volume}%",
+        "format-bluetooth-muted": "{icon} {volume}%",
+        "nospacing": 1,
+        "on-click": "pavucontrol",
+        "tooltip": true
+    },
+
+    "bluetooth": {
+        "format-on": "󰂯",
+        "format-off": "󰂲",
+        "format-disabled": "", // an empty format will hide the module
+        "format-connected": "󰂱 {num_connections}",
+        "tooltip-format-connected": "{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "blueman-manager"
+    },  
+
+    "tray": {
+        "spacing": 10,
+        "tooltip": true
+    },
+    
+    "network": {
+        "format-wifi": " ",
+        "format-ethernet":" ",
+        "format-disconnected": "",
+        "tooltip-format-disconnected": "Error",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+        "tooltip-format-ethernet": "{ifname} 🖧 ",
+        "on-click": "kitty nmtui"
+    },
+
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip": true,
+        "tooltip-format": "{:%A, %d %B %Y}",
+    },
+    "custom/pacman": {
+        "format": "󰅢 {}",
+        "interval": 30,   
+        "exec": "checkupdates | wc -l",
+        "exec-if": "exit 0",
+        "on-click": "kitty sh -c 'sudo pacman -Syu; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar",
+        "signal": 8,
+        "tooltip": false,
+    },
+
+}

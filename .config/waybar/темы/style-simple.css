@@ -1,0 +1,36 @@
+@import url("/home/mirroxin/.cache/wal/colors-waybar.css");
+
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-family: "Monocraft";
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0;
+}
+
+.modules-left {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.modules-right {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: transparent;
+    border-radius: 5px;
+}
+
+window#waybar {
+    background: @background;
+    border-radius: 2px;
+
+}
+#clock {
+    margin: 6px 6px 6px 0px;
+    padding: 2px 8px;
+    padding-right: 20px;
+}

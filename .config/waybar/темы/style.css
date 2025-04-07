@@ -4,14 +4,14 @@
     border: none;
     border-radius: 0;
     min-height: 0;
-    font-family: "SF Pro Display";
+    font-family: "Monocraft";
     font-weight: 500;
     font-size: 14px;
     padding: 0;
 }
 
 window#waybar {
-    background: transparent;
+    background: @background;
     border-radius: 6px;
 }
 
@@ -35,14 +35,16 @@ tooltip {
 }
 
 #clock,
-#tray,
+#custom-weather,
 #custom-media,
 #network {
     margin: 6px 6px 6px 0px;
     padding: 2px 8px;
 }
 
-
+#custom-pacman,
+#cpu,
+#memory,
 #bluetooth,
 #pulseaudio {
     margin: 6px 6px 6px 0px;
@@ -58,6 +60,7 @@ tooltip {
 }
 
 #custom-archlogo {
+    background-image: url("/home/mirroxin/Downloads/pidor-round.png");
     background-size: 28px 28px;
     background-repeat: no-repeat;
     background-position: left;
@@ -101,4 +104,83 @@ tooltip {
     color: @color9;
     border: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+
+#clock {
+    background: @color1;
+    opacity: 0.9;
+    border-radius: 5px;
+    color: #000000;
+}
+
+#cpu {
+    background: @color1;
+    opacity: 0.9;
+    border-radius: 5px;
+    color: #000000;
+}
+
+#memory{
+    background: @color2;
+    opacity: 0.9;
+    border-radius: 5px;
+    color: #000000;
+}
+
+#pulseaudio {
+    background: @color1;
+    opacity: 0.9;
+    border-radius: 5px;
+    color: #000000;
+}
+
+#tray {
+    margin: 6px 6px 6px 0px;
+    opacity: 0.9;
+    background: @background;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+#network {
+    background-color: @color2;
+    opacity: 0.9;
+    border-radius: 5px;
+    color: #1d2021;
+}
+
+#bluetooth {
+    background: @color1;
+    opacity: 0.9;
+    border-radius: 5px;
+    color: #000000;
+}
+
+#custom-weather {
+    background: @color1;
+    opacity: 0.9;
+    border-radius: 5px;
+    color: #000000;
+}
+
+tooltip {
+    background: rgba(0, 0, 0, 0.5); 
+    opacity: 0.9;
+    border-radius: 5px;
+    color: #000000;
+}
+
+#custom-media {
+    background-color: @color2;
+    opacity: 0.9;
+    border-radius: 5px;
+    color: #1d2021;
+    transition: all .3s;
+}
+
+#custom-pacman {
+    background: @color1;
+    opacity: 0.9;
+    border-radius: 5px;
+    color: #000000;
 }

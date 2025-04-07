@@ -1,0 +1,27 @@
+{
+    "layer": "bottom",
+    "spacing": 0,
+    "position":"bottom",
+    "height": 0,
+    "margin-top": 8,
+    "margin-right": 100,
+    "margin-bottom": 0,
+    "margin-left": 100,
+
+    "modules-left": ["custom/apps"],
+    "modules-right": ["custom/power"],
+    "modules-center": ["clock"],
+
+
+"custom/power": {
+    "format": "󰐥 ",  
+    "tooltip": "Выключение",
+    "on-click": "exec .config/hypr/scripts/powermenu.sh"
+},
+
+"custom/apps": {
+    "format": "☰",  
+    "tooltip": "Меню приложений",
+    "on-click": "sh -c 'wofi --show drun'"
+}
+}

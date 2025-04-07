@@ -13,11 +13,8 @@ main() {
         swww img "$selected_wallpaper" --transition-type simple
         wal -i "$selected_wallpaper"
         walogram
-        pkill swaync && swaync
         pkill waybar 
         waybar
-        pkill hypr-dock
-        hypr-dock
         
     fi
 }

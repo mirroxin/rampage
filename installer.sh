@@ -11,7 +11,7 @@ fi
 
 
 # пакеьи пакмаен
-sudo pacman -S --needed --noconfirm git base-devel waybar hyprlock kitty rofi fastfetch firefox gtk3 gtk-layer-shell broadcom-wl
+sudo pacman -S --needed --noconfirm git base-devel waybar hyprlock kitty rofi fastfetch firefox gtk3 gtk-layer-shell broadcom-wl fish
 
 # гетхабек
 git clone https://github.com/mirroxin/rampage.git
@@ -25,7 +25,6 @@ cd ~/rampage
 
 # капирование
 cp -r .config ~/
-cp .bashrc ~/
 cp -r Downloads ~/
 cp -r wallpaper ~/
 

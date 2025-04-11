@@ -6,7 +6,7 @@ menu() {
 }
 
 main() {
-    choice=$(menu | wofi -c ~/.config/wofi/wallpaper -s ~/.config/wofi/style-wallpaper.css --show dmenu --prompt "Select Wallpaper:")
+    choice=$(menu | wofi -c ~/.config/wofi/wallpaper -s ~/.config/wofi/style-wallpaper.css --show dmenu --prompt "Select Wallpaper:" -n)
     selected_wallpaper=$(echo "$choice" | sed 's/^img://')
     
     if [[ -n "$selected_wallpaper" && -f "$selected_wallpaper" ]]; then
@@ -15,6 +15,8 @@ main() {
         walogram
         pkill waybar 
         waybar
+        pkill swaync
+        swaync
         
     fi
 }

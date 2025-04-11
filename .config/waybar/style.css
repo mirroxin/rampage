@@ -30,7 +30,7 @@ window#waybar {
 }
 
 tooltip {
-    background-color: @color1;
+    background-color: #686666;
     border-radius: 5px;
 }
 
@@ -43,6 +43,8 @@ tooltip {
 }
 
 
+#cpu,
+#memory,
 #bluetooth,
 #pulseaudio {
     margin: 6px 6px 6px 0px;
@@ -72,7 +74,7 @@ tooltip {
 #workspaces button {
     all:unset;
     padding: 0px 5px;
-    color: alpha(@color9,.4);
+    color: #ffffff;
     transition: all .2s ease;
 }
 #workspaces button:hover {

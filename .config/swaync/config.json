@@ -1,6 +1,6 @@
 {
     "$schema": "/etc/xdg/swaync/configSchema.json",
-    "positionX": "left",
+    "positionX": "center",
     "positionY": "top",
     "control-center-layer": "top",
     "layer-shell": true,
@@ -22,7 +22,7 @@
     "timeout-critical": 1,
     "fit-to-screen": false,
     "keyboard-shortcuts": true,
-    "image-visibility": "when available",
+    "image-visibility": "always",
     "transition-time": 200,
     "hide-on-clear": false,
     "hide-on-action": true,

@@ -39,7 +39,7 @@
         "format-connected": "󰂱 {num_connections}",
         "tooltip-format-connected": "{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-        "on-click": "blueman-manager"
+        "on-click": "exec .config/hypr/scripts/wofi-bluetooth"
     },      
     "network": {
         "format-wifi": "",
@@ -48,7 +48,7 @@
         "tooltip-format-disconnected": "Error",
         "tooltip-format-wifi": "{essid} ({signalStrength}%)",
         "tooltip-format-ethernet": "{ifname} 🖧 ",
-        "on-click": "kitty nmtui"
+        "on-click": "exec .config/hypr/scripts/wifimenu "
     },    
     "hyprland/language": {
         "format": "{}",
@@ -82,5 +82,14 @@
             "format": "    ",
             "tooltip": false
         },       
+        "cpu": {
+            "format": "  {usage}%",
+            "interval": 2
+        },            
+        "memory": {
+            "format": "  {percentage}%",
+            "interval": 2
+        },
+    
     
 }

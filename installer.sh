@@ -11,7 +11,7 @@ fi
 
 
 # пакеьи пакмаен
-sudo pacman -S --needed --noconfirm git base-devel waybar hyprlock kitty rofi fastfetch firefox gtk3 gtk-layer-shell broadcom-wl fish
+sudo pacman -S --needed --noconfirm git base-devel waybar hyprlock kitty rofi fastfetch firefox gtk3 gtk-layer-shell broadcom-wl fish sxiv cava cmatrix
 
 # гетхабек
 git clone https://github.com/mirroxin/rampage.git

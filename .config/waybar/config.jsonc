@@ -8,15 +8,13 @@
     "margin-bottom": 0,
     "margin-left": 0,
 
-    "modules-left": ["custom/archlogo","group/expand"],
-    "modules-right": ["custom/media", "tray", "pulseaudio","network", "bluetooth", "clock"],
+    "modules-left": ["group/expand"],
+    "modules-right": ["custom/media", "tray", "pulseaudio","network", "bluetooth","clock"],
     "modules-center": ["hyprland/workspaces"],
 
 
  "custom/archlogo": {
-    "format": " ",
-    "on-click": "wofi --show drun",
-    "on-click-right": "exec .config/hypr/scripts/powermenu.sh ",
+    "format": "",
     "tooltip": true,
     "tooltip-format": "meowww 十",
     },
@@ -29,16 +27,19 @@
         "format-bluetooth-muted": "{icon}",
         "nospacing": 1,
         "on-click": "pavucontrol",
+        "on-scroll-up": "$HOME/.config/hypr/scripts/Volume.sh --inc",
+        "on-scroll-down": "$HOME/.config/hypr/scripts/Volume.sh --dec",
         "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-        "tooltip": true
+        "tooltip": true,
+        "tooltip-format": "{source_desc} | {source_volume}%",
     },   
     "bluetooth": {
         "format-on": "󰂯",
         "format-off": "󰂲",
         "format-disabled": "", // an empty format will hide the module
         "format-connected": "󰂱 {num_connections}",
-        "tooltip-format-connected": "{device_enumerate}",
-        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+		"tooltip-format-connected": " {device_enumerate}",
+		"tooltip-format-enumerate-connected": "{device_alias}",
         "on-click": "exec .config/hypr/scripts/wofi-bluetooth"
     },      
     "network": {
@@ -46,7 +47,7 @@
         "format-ethernet":" ",
         "format-disconnected": "",
         "tooltip-format-disconnected": "Error",
-        "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+        "tooltip-format-wifi": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({bandwidthDownBytes})</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>",
         "tooltip-format-ethernet": "{ifname} 🖧 ",
         "on-click": "exec .config/hypr/scripts/wifimenu "
     },    
@@ -67,7 +68,8 @@
             "on-click": "playerctl play-pause",
             "on-scroll-up": "playerctl next",
             "on-scroll-down": "playerctl previous",
-            "tooltip": false
+            "tooltip": true,
+            "tooltip-format": "OMAGAD",
         },    
         "group/expand": {
             "orientation": "horizontal",
@@ -76,7 +78,7 @@
                 "transition-to-left": true,
                 "click-to-reveal": true
               },
-              "modules": [ "custom/separator","cpu","memory"],
+              "modules": [ "custom/archlogo","cpu","memory","custom/weather", "custom/text"]
         },
         "custom/separator": {
             "format": "    ",
@@ -90,6 +92,27 @@
             "format": "  {percentage}%",
             "interval": 2
         },
+
+        "clock": {
+            "tooltip-format": "<tt><small>{calendar}</small></tt>",
+            "calendar": {
+                "format": {
+                    "today": "<span color='#ffffff'><b><u>{}</u></b></span>"
+                }
+            }
+        },
     
+   "custom/weather": {
+    "format": "{}°",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "wttrbar",
+    "return-type": "json"
+   },        
+"custom/text": {
+    "format": "CLICK ME",
+    "on-click": "exec notify-send привееет убейсебя"
     
+},
+
 }

@@ -1,0 +1,25 @@
+# Colors
+include $HOME/.cache/wal/colors-kitty.conf
+# font_family  SF Mono Regular
+background_blur 1
+background_opacity 0.4
+enabled_layouts horizontal
+cursor_trail 1
+cursor_trail_start_threshold 0
+cursor_blink_interval 0
+url_color #000000
+map ctrl+c copy_to_clipboard
+map ctrl+v paste_from_clipboard
+map ctrl+м paste_from_clipboard
+map ctrl+с copy_to_clipboard
+confirm_os_window_close 0
+
+
+
+
+# BEGIN_KITTY_FONTS
+font_family      family="Hack"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+# END_KITTY_FONTS
